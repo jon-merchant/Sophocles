@@ -1,0 +1,362 @@
+/*
+font-family: 'Metamorphous', cursive;
+font-family: 'Wallpoet', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Fredericka the Great', cursive;
+*/
+.font-wallpoet {
+    font-family: 'Wallpoet', cursive;
+}
+.font-metamorphouse {
+    font-family: 'Metamorphous', cursive;
+}
+.font-special-elite {
+    font-family: 'Special Elite', cursive;
+}
+
+.padding-top-25 {
+    padding-top: 25px;
+}
+.padding-top-35 {
+    padding-top: 35px;
+}
+.padding-top-45 {
+    padding-top: 45px;
+}
+.padding-top-55 {
+    padding-top: 55px;
+}
+.padding-top-65 {
+    padding-top: 65px;
+}
+.padding-top-70 {
+    padding-top: 70px;
+}
+.padding-top-75 {
+    padding-top: 75px;
+}
+.margin-top-55 {
+    margin-top: 55px;
+}
+.margin-top-65 {
+    margin-top: 65px;
+}
+.navbar-brand {
+    padding-top: 0px;
+}
+.navbar-brand h2 {
+    display: inline;
+}
+.navbar-brand img {
+    vertical-align: top;
+    height: 40px;
+}
+.dropdown .dropdown-menu, .dropleft .dropdown-menu, .dropright .dropdown-menu, .dropup .dropdown-menu {
+    padding: .5rem;
+}
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:active, .dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropleft .dropdown-menu.dropdown-primary .dropdown-item:active, .dropleft .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropright .dropdown-menu.dropdown-primary .dropdown-item:active, .dropright .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropup .dropdown-menu.dropdown-primary .dropdown-item:active, .dropup .dropdown-menu.dropdown-primary .dropdown-item:hover {
+    background-color: #3E4551!important;
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover, .dropleft .dropdown-menu .dropdown-item:active, .dropleft .dropdown-menu .dropdown-item:hover, .dropright .dropdown-menu .dropdown-item:active, .dropright .dropdown-menu .dropdown-item:hover, .dropup .dropdown-menu .dropdown-item:active, .dropup .dropdown-menu .dropdown-item:hover {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    background-color: #4285f4;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+}
+#toast-container>div, .card.card-cascade .view.view-cascade.gradient-card-header, .clockpicker-display .clockpicker-display-column #click-am.text-primary, .clockpicker-display .clockpicker-display-column #click-pm.text-primary, .clockpicker-display .clockpicker-display-column .clockpicker-span-hours.text-primary, .clockpicker-display .clockpicker-display-column .clockpicker-span-minutes.text-primary, .darktheme .picker__box .picker__calendar-container .clockpicker-plate .clockpicker-tick, .darktheme .picker__box .picker__date-display .clockpicker-display, .darktheme .picker__box .picker__date-display .clockpicker-display .clockpicker-span-am-pm, .darktheme .picker__box .picker__footer button, .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover, .dropleft .dropdown-menu .dropdown-item:active, .dropleft .dropdown-menu .dropdown-item:hover, .dropright .dropdown-menu .dropdown-item:active, .dropright .dropdown-menu .dropdown-item:hover, .dropup .dropdown-menu .dropdown-item:active, .dropup .dropdown-menu .dropdown-item:hover, .picker--focused .picker__list-item--selected, .picker--time .picker__button--clear:focus, .picker--time .picker__button--clear:focus:before, .picker--time .picker__button--clear:hover, .picker--time .picker__button--clear:hover:before, .picker__box .picker__header .picker__date-display, .picker__box .picker__table .picker--focused, .picker__box .picker__table .picker__day--outfocus, .picker__box .picker__table .picker__day--selected, .picker__box .picker__table .picker__day--selected:hover, .picker__date-display, .picker__date-display .clockpicker-display .clockpicker-display-column #click-am.text-primary, .picker__date-display .clockpicker-display .clockpicker-display-column #click-pm.text-primary, .picker__date-display .clockpicker-display .clockpicker-display-column .clockpicker-span-hours.text-primary, .picker__date-display .clockpicker-display .clockpicker-display-column .clockpicker-span-minutes.text-primary, .picker__list-item--selected, .picker__list-item--selected:hover, .side-nav, .side-nav .search-form .form-control, .toast-close-button, .toast-message a, .toast-message label, .white-text {
+    color: #fff!important;
+}
+.dropdown .dropdown-menu .dropdown-item, .dropleft .dropdown-menu .dropdown-item, .dropright .dropdown-menu .dropdown-item, .dropup .dropdown-menu .dropdown-item {
+    padding: .5rem;
+    margin-left: 0;
+    font-size: .9rem;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: -265px;
+    background-color: #3E4551;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+    padding: 15px;
+    width: 270px;
+    box-shadow: 3px 0px 4px 0px rgba(0,0,0,0.45);
+}
+
+
+.sidenavOpen {
+    left:0;
+}
+
+.sidenavClose {
+    left:-265px;
+}
+
+.sideNavOpener, .sideNavCloser {
+    cursor: pointer;
+}
+.sidenav-tab {
+    color: #fff;
+}
+.view.overlay {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+}
+.card .btn-action {
+    margin-top: -1.44rem;
+    margin-bottom: -1.44rem;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    color: #fff;
+}
+.btn-floating {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    width: 47px;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+.btn-floating i {
+    font-size: 1.25rem;
+    line-height: 47px;
+}
+
+.mdb-color.lighten-3 {
+    background-color: #616D7F!important; 
+}
+
+.rounded-bottom {
+    border-bottom-right-radius: .25rem!important;
+    border-bottom-left-radius: .25rem!important;
+}
+.card {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border: 0;
+    position: relative;
+    margin-bottom:15px;
+}
+
+.genre-overlay {
+    background-color: rgba(0,0,0,0.55);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.book-header {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: .25rem!important;
+    border-top-left-radius: .25rem!important;
+}
+.book-info {
+    padding: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+}
+.book-info h1 {
+    font-size: 3rem;    
+    text-align: center;
+}
+.book-plot {
+   
+}
+#storyboard > div {
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: .25em;
+    padding: 10px;
+    
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.25);
+    
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.sortable, .unsortable {
+    position: relative; 
+}
+.sortable {
+    cursor: grab;
+    background-color: #efefef;
+}
+.unsortable {
+    cursor: unset;
+    background: #fff;
+}
+.sb_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%; 
+}
+
+.help-icon {
+    display:inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* common */
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+  }
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+  }
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 18px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 14px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+  /* top left*/
+  .ribbon-top-left {
+    top: -10px;
+    left: -10px;
+  }
+  .ribbon-top-left::before,
+  .ribbon-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  .ribbon-top-left::before {
+    top: 0;
+    right: 0;
+  }
+  .ribbon-top-left::after {
+    bottom: 0;
+    left: 0;
+  }
+  .ribbon-top-left span {
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+  }
+  
+  /* top right*/
+  .ribbon-top-right {
+    top: -10px;
+    right: -10px;
+  }
+  .ribbon-top-right::before,
+  .ribbon-top-right::after {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  .ribbon-top-right::before {
+    top: 0;
+    left: 0;
+  }
+  .ribbon-top-right::after {
+    bottom: 0;
+    right: 0;
+  }
+  .ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  
+  /* bottom left*/
+  .ribbon-bottom-left {
+    bottom: -10px;
+    left: -10px;
+  }
+  .ribbon-bottom-left::before,
+  .ribbon-bottom-left::after {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  .ribbon-bottom-left::before {
+    bottom: 0;
+    right: 0;
+  }
+  .ribbon-bottom-left::after {
+    top: 0;
+    left: 0;
+  }
+  .ribbon-bottom-left span {
+    right: -25px;
+    bottom: 30px;
+    transform: rotate(225deg);
+  }
+  
+  /* bottom right*/
+  .ribbon-bottom-right {
+    bottom: -10px;
+    right: -10px;
+  }
+  .ribbon-bottom-right::before,
+  .ribbon-bottom-right::after {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+  }
+  .ribbon-bottom-right::before {
+    bottom: 0;
+    left: 0;
+  }
+  .ribbon-bottom-right::after {
+    top: 0;
+    right: 0;
+  }
+  .ribbon-bottom-right span {
+    left: -25px;
+    bottom: 30px;
+    transform: rotate(-225deg);
+  }

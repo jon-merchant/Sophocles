@@ -1,0 +1,70 @@
+//Workaround: - PRB1287069 
+var onChangeCount = data.sc_cat_item.client_script.onChange.length, 
+onSubmitCount = data.sc_cat_item.client_script.onSubmit.length, 
+onLoadCount = data.sc_cat_item.client_script.onLoad.length; 
+
+
+// TODO, hot fix should self-de-activate when SN fixes bug 
+if (onChangeCount === 0 && onSubmitCount === 0 && onLoadCount === 0) { 
+// it's unlikely that we didn't have any client scripts, let's see if there's a bug 
+// and add them back manually if so 
+// get all catalog client scripts for this cat item 
+var grClientScripts = new GlideRecord('catalog_script_client'); 
+grClientScripts.addQuery('cat_item', data.sys_id); 
+grClientScripts.query(); 
+while (grClientScripts.next()) { 
+//console.log('found script: ' + grClientScripts.name); 
+var clientScriptType = grClientScripts.type.toString(); 
+// TODO: skip adding client scripts if already added (by SN platform) 
+// add the missing scripts manually 
+data.sc_cat_item.client_script[clientScriptType].push({ 
+fieldName: getFieldName(grClientScripts.cat_variable.toString()), 
+name: grClientScripts.name.toString(), 
+script: grClientScripts.script.toString(), 
+sys_id: grClientScripts.sys_id.toString(), 
+tableName: "" 
+}); 
+
+} 
+} 
+
+function getFieldName(ioName) { 
+return data.sc_cat_item._fields[ioName].variable_name; 
+} 
+// Start workaround for Variable sets 
+var grVariableSets = new GlideRecord('io_set_item');
+grVariableSets.addQuery('sc_cat_item', data.sys_id); 
+grVariableSets.query(); 
+
+while (grVariableSets.next()) {
+var variableSetSysId = grVariableSets.variable_set.toString();
+console.log("Variable Set Sys ID:- "+variableSetSysId);
+
+var grClientScriptsVarSet = new GlideRecord('catalog_script_client');
+grClientScriptsVarSet.addQuery('variable_set', variableSetSysId); 
+grClientScriptsVarSet.query(); 
+
+while (grClientScriptsVarSet.next()) { 
+//console.log('found script: ' + grClientScripts.name); 
+var clientScriptType = grClientScriptsVarSet.type.toString(); 
+// TODO: skip adding client scripts if already added (by SN platform) 
+// add the missing scripts manually 
+data.sc_cat_item.client_script[clientScriptType].push({ 
+fieldName: getFieldName(grClientScriptsVarSet.cat_variable.toString()), 
+name: grClientScriptsVarSet.name.toString(), 
+script: grClientScriptsVarSet.script.toString(), 
+sys_id: grClientScriptsVarSet.sys_id.toString(), 
+tableName: "" 
+}); 
+}
+} 
+// End workaround for variable sets
+
+// End workaround
+
+
+
+
+
+
+cat_item.sys_id=e828b91ddbe95b40678ab96c4e961922
